@@ -34,7 +34,7 @@ I originally wanted to play the drums, but every time I listened to music with d
 
 ---
 
-## Project Structure
+##Project Structure
 
 AIRDRUMS
 ├── AUDIO
@@ -65,6 +65,7 @@ AIRDRUMS
 │       Processes hand pose detection using Vision
 │
 └── Assets
+
 
 ---
 
