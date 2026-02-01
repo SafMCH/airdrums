@@ -36,6 +36,7 @@ I originally wanted to play the drums, but every time I listened to music with d
 
 ## Project Structure
 
+
 AIRDRUMS
 ├── AUDIO
 │   └── AudioEngineManager
@@ -65,6 +66,7 @@ AIRDRUMS
 │       Processes hand pose detection using Vision
 │
 └── Assets
+
 
 ---
 
