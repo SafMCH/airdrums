@@ -1,48 +1,105 @@
-# AirDrums
+# AirDrums 🥁
 
-## Description
-AirDrums transforms any device with a camera into an interactive virtual drum kit using **hand gesture recognition**. 
-Users can play drums in the air with natural hand movements, making music creation **accessible, portable, and engaging** without physical instruments.
+**Gesture-based virtual drums using webcam hand tracking**
 
-> The project originated from the creator’s personal experience of playing drums in the air while listening to music.
-The motivation is to bridge the gap between natural hand movements and virtual musical instruments,
-leveraging computer vision for real-time gesture detection.
+AirDrums is a macOS SwiftUI application that turns hand movements captured by the webcam into real-time drum sounds. It uses computer vision to track hand positions and map gestures to virtual drum elements inside an invisible interaction space.
+
+This project explores **gesture-based interaction**, **real-time audio feedback**, and **spatial computing-inspired interfaces**.
+
+---
+
+## Concept & Motivation
+
+The idea came from a personal habit:
+I originally wanted to play the drums, but every time I listened to music with drums, I instinctively started playing the rhythm in the air. AirDrums turns that unconscious gesture into an actual interactive instrument.
+
 ---
 
 ## Features
-- Detects hand movements in real-time using the device camera  
-- Maps hand positions to virtual drum zones  
-- Triggers authentic drum sounds based on velocity and position  
-- VisionOS-inspired 3D gesture-to-drum mapping  
+
+* Webcam-based hand tracking
+* Gesture-to-sound mapping
+* Velocity-based hit intensity
+* Real-time audio playback
+* SwiftUI-based interface
+---
+
+## Tech Stack
+
+* **Language:** Swift
+* **UI Framework:** SwiftUI
+* **Computer Vision:** Apple Vision framework
+* **Audio:** AVFoundation
+* **Platform:** macOS
 
 ---
 
-## Platform Strategy
+## Project Structure
 
-### Current Phase (MVP)
-- **macOS**: primary development and testing platform  
-- Camera-based hand tracking via **Vision framework**  
-- Desktop-optimized UI  
-
-### Future Phases
-- **iOS/iPadOS**: mobile version with front-facing camera  
-- **visionOS**: native spatial computing experience  
+```
+AIRDRUMS
+├── AUDIO
+│   └── AudioEngineManager
+│       Manages audio engine, drum samples, and sound playback
+│
+├── CAMERA
+│   └── CameraManager
+│       Handles webcam capture and frame delivery
+│
+├── GAMELOGIC
+│   └── GestureMapper
+│       Maps hand positions and movement data to drum zones
+│
+├── MODELS
+│   ├── AIRDRUMSApp
+│   └── DrumstickView
+│       App entry point and core data models
+│
+├── VIEWS
+│   ├── CameraView
+│   ├── ContentView
+│   └── OverlayView
+│       SwiftUI interface and visual overlays
+│
+├── VISION
+│   └── HandPoseProcessor
+│       Processes hand pose detection using Vision
+│
+└── Assets
+```
 
 ---
-## Installation
-Clone the repository:  
-Open AIRDRUMS.xcodeproj in Xcode
-Build and run on macOS (or supported device)
-Grant camera permissions for hand tracking
 
-## Usage:
+## How It Works (High Level)
+
+1. The webcam captures live video frames
+2. Vision detects hand pose landmarks
+3. Hand position and velocity are extracted
+4. Gestures are mapped to virtual drum zones
+5. Audio engine triggers corresponding drum sounds in real time
+
 ---
 
-Move your hands in front of the camera to trigger drum sounds
-Explore different gestures to play different drum types
+## Current Status
 
-PS:
-AirDrums is still a work in progress. Future improvements will focus on:
-Enhancing the UI and UX for a smoother, more immersive experience
-Adding more drums, sounds, and animations
-Optimizing gesture detection for fluid, responsive interaction
+* Core interaction pipeline implemented
+* Basic drum mapping functional
+* Project is **experimental and evolving**
+
+This is an **early-stage personal project**, focused on learning and prototyping rather than production polish.
+
+---
+
+## Future Improvements
+
+* Smoother gesture recognition and latency reduction
+* Additional drum kits and sound variations
+* Visual feedback for hit zones
+* Improved UX/UI and interaction fluidity
+* Potential expansion to iOS and visionOS
+
+---
+
+## Notes
+
+This project is part of my learning journey in Swift, SwiftUI, and interaction design.
