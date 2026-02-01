@@ -7,7 +7,6 @@ Users can play drums in the air with natural hand movements, making music creati
 > The project originated from the creator’s personal experience of playing drums in the air while listening to music.
 The motivation is to bridge the gap between natural hand movements and virtual musical instruments,
 leveraging computer vision for real-time gesture detection.
-
 ---
 
 ## Features
@@ -15,13 +14,6 @@ leveraging computer vision for real-time gesture detection.
 - Maps hand positions to virtual drum zones  
 - Triggers authentic drum sounds based on velocity and position  
 - VisionOS-inspired 3D gesture-to-drum mapping  
-
----
-
-## Core Concept
-AirDrums is a **gesture-based musical instrument app** that uses computer vision to detect hand movements and trigger drum sounds.  
-- Creates an invisible 3D space where hand positions map to different drums  
-- Movement velocity determines hit intensity  
 
 ---
 
@@ -35,7 +27,6 @@ AirDrums is a **gesture-based musical instrument app** that uses computer vision
 ### Future Phases
 - **iOS/iPadOS**: mobile version with front-facing camera  
 - **visionOS**: native spatial computing experience  
-- **watchOS**: rhythm companion/metronome  
 
 ---
 ## Installation
