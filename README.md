@@ -34,8 +34,9 @@ I originally wanted to play the drums, but every time I listened to music with d
 
 ---
 
-##Project Structure
+## Project Structure
 
+```
 AIRDRUMS
 ├── AUDIO
 │   └── AudioEngineManager
@@ -65,7 +66,7 @@ AIRDRUMS
 │       Processes hand pose detection using Vision
 │
 └── Assets
-
+```
 
 ---
 
@@ -102,3 +103,5 @@ This is an **early-stage personal project**, focused on learning and prototyping
 ## Notes
 
 This project is part of my learning journey in Swift, SwiftUI, and interaction design.
+
+
